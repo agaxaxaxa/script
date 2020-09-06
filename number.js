@@ -23,7 +23,7 @@
   for (let statusid = 0; statusid < 6; statusid++)//個体ごとに異なるステータスを設定
   {
     status = Math.floor( Math.random() * 21 );//0～20の間でスタータスの加算する値を決定
-    $gameParty.members(0).addParm(statusid, status);//０番目にキャラへステータス情報の反映
+    $gameParty.members(0).addParm(statusid, status);//0番目にキャラへステータス情報の反映
   }
 
   $gameMesage.add($gameParty.members(0).name);//パーティに追加されたキャラの名前を表示
